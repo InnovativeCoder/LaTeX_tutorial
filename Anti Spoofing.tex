@@ -42,27 +42,49 @@ the code written below is improved.
 	[12.5cm]
 	\end{center}
 	
-	\begin{flushright}
+	\begin{flushright}  %flushright is used as the reference in the right hand border of the title page giving all sort of information about the researcher of the particular paper.
 	\textsc{\large Jasneet Singh Sawhney\\
 	\#IEEE member ID - 94379222\\
 	August 27, 2017\\}
 	\end{flushright}
 
-	
 \end{titlepage}
+
+%Front matter 
+\pagenumbering{roman}
+\section*{Summary} %*the asterisk sign is used to remove the  heading number from it.
+\addcontentsline{toc}{section}{\numberline{}Summary} %adding Summary to the table of contents
+This is the summary of the complete research paper in order to help the reader go through the paper easily.
+\cleardoublepage
+
+\section*{Acknowledgements}
+\addcontentsline{toc}{section}{\numberline{}Acknowldgements}
+Thanks to IEEE department to give me chance to work on this project.
+\cleardoublepage
+%Table of contents
+\tableofcontents   %this will require to be built twice as it take a couple of references to get built
+
+%the contents page usually don't have the page number written on it, so we should get rid of the page number for this page
+\thispagestyle{empty}
+\cleardoublepage %to push the rest of matter on the next page
+% This is the main body
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
 \section{Introduction}\label{sec:intro}
 This is the Robust Anti Spoofing Algorithm implementation using various algorithms.
 
 The code is well explained.
 \lipsum[1]
 
-\newpage
+\newpage %new page is selected and matter is written to the new page
 \section{LBP : Local Binary Pattern}
 LBP is an intelligent way of checking the illumination. 
 
 The intorduction of this algorithm is found on page \pageref{sec:intro}
 \subsection{How it works?}
-The pattern is described by an illumination matrix which is  taken as relative.
+The pattern is described by an illumination matrix which is  taken as relative to the central grid.
 \subsubsection{It contains the image of the working of LBPs}
 
 

@@ -3,6 +3,11 @@
 \usepackage{lipsum}
 \usepackage{comment}
 \usepackage[margin = 1in, includefoot]{geometry}
+%Graphics ensemble
+\usepackage(graphicx) %Allows you to import images
+\usepackage(float) %Allows for control of float positions
+
+
 
 %Header and Footer stuff
 \usepackage{fancyhdr}
@@ -68,6 +73,9 @@ Thanks to IEEE department to give me chance to work on this project.
 \thispagestyle{empty}
 \cleardoublepage %to push the rest of matter on the next page
 % This is the main body
+\listoffigures
+\addcontentsline{toc}{section}{\numberline List of Figures} 
+\cleardoublepage
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
@@ -83,6 +91,21 @@ The code is well explained.
 LBP is an intelligent way of checking the illumination. 
 
 The intorduction of this algorithm is found on page \pageref{sec:intro}
+
+%Here we insert our figure
+\begin{figure}[H]
+	\centering
+	\includegraphics[height = 3in]{/Users/DBRSJ/Desktop/LaTeX/LaTeX_tutorial/Spoofing.jpg}
+	\caption[Optional caption]{Real, local caption} %if you want to insert a reference always give that in real curly braces otherwise it may cause problem in biblography
+	\label{fig:Spoofing}
+\end{figure}
+
+Figure \ref{fig:Spoofing}shows the spoofing of fingerprint
+
+
+Figure \ref{fig:spoofing}
+
+
 \subsection{How it works?}
 The pattern is described by an illumination matrix which is  taken as relative to the central grid.
 \subsubsection{It contains the image of the working of LBPs}

@@ -3,9 +3,12 @@
 \usepackage{lipsum}
 \usepackage{comment}
 \usepackage[margin = 1in, includefoot]{geometry}
+
+%\usepackage[hidelinks]{ hyperef } %this will help in hiding the links as if it is not done then links will appear in funky colors which won't look nice.
+
 %Graphics ensemble
-\usepackage(graphicx) %Allows you to import images
-\usepackage(float) %Allows for control of float positions
+%\usepackage(graphicx) %Allows you to import images
+%\usepackage(float) %Allows for control of float positions
 
 
 
@@ -34,6 +37,7 @@ the code written below is improved.
 \end{comment}
 %commenting over
 \begin{titlepage}
+
 	\begin{center}
 	\line(1,0){300}\\
 	[0.25 in]
@@ -76,6 +80,11 @@ Thanks to IEEE department to give me chance to work on this project.
 \listoffigures
 \addcontentsline{toc}{section}{\numberline List of Figures} 
 \cleardoublepage
+
+%\listoftables
+%\addcontainsline{toc}{section}{\numberline{} List of tables}
+%\cleardoublepages 
+
 \pagenumbering{arabic}
 \setcounter{page}{1}
 
@@ -90,31 +99,39 @@ The code is well explained.
 \section{LBP : Local Binary Pattern}
 LBP is an intelligent way of checking the illumination. 
 
-The intorduction of this algorithm is found on page \pageref{sec:intro}
+The introduction of this algorithm is found on page \pageref{sec:intro}
 
 %Here we insert our figure
-\begin{figure}[H]
-	\centering
-	\includegraphics[height = 3in]{/Users/DBRSJ/Desktop/LaTeX/LaTeX_tutorial/Spoofing.jpg}
-	\caption[Optional caption]{Real, local caption} %if you want to insert a reference always give that in real curly braces otherwise it may cause problem in biblography
-	\label{fig:Spoofing}
-\end{figure}
+%\begin{figure}[H]
+%	\centering
+%	\includegraphics[height = 3in]{/Users/DBRSJ/Desktop/LaTeX/LaTeX_tutorial/Spoofing.png}
+%	\caption[Optional caption]{Real, local caption} %if you want to insert a reference always give that in real curly braces otherwise it may cause problem in biblography
+%	\label{fig:Spoofing}
+%\end{figure}
 
-Figure \ref{fig:Spoofing}shows the spoofing of fingerprint
+%Figure \ref{fig:Spoofing}shows the spoofing of fingerprint
 
 
-Figure \ref{fig:spoofing}
+%Figure \ref{fig:spoofing}
 
 
 \subsection{How it works?}
 The pattern is described by an illumination matrix which is  taken as relative to the central grid.
+%Our first table
+%\begin{table}[H]
+%	\centering
+%	\label{tab:LBPworking}
+%	\caption[This is optional caption,without reference]{Local caption, with reference}
+%	\begin{tabular}{ | c r }
+%		\bfseries{Grid number} & pattern generated?  & LBP?\\ \hline
+%		3,2 & Yes & 1001101\\
+%		6,8 & Yes & 1001010\\
+%		9,8 & Yes & 1011100\\
+%	\end{tabular}
+%\end{table}
+	
+	
+
 \subsubsection{It contains the image of the working of LBPs}
-
-
-
-
-
-
-
 
 \end{document}

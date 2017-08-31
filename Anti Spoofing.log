@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  31 AUG 2017 15:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.8.30)  31 AUG 2017 16:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -156,6 +156,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 ] [2] (./Anti Spoofing.bbl) [3
 
+] [4
+
 ] (./Anti Spoofing.aux) ) 
 Here is how much of TeX's memory you used:
  1462 strings out of 492995
@@ -171,10 +173,10 @@ amsfonts/cm/cmbx12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmcsc10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmr10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb>
-Output written on "Anti Spoofing.pdf" (8 pages, 82239 bytes).
+Output written on "Anti Spoofing.pdf" (9 pages, 83107 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 54 PDF objects out of 1000 (max. 8388607)
+ 37 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -6,3 +6,4 @@
 \contentsline {subsection}{\numberline {2.1}How it works?}{2}
 \contentsline {subsubsection}{\numberline {2.1.1}It contains the image of the working of LBPs}{2}
 \contentsline {section}{\hbox to\@tempdima {\hfil }References}{3}
+\contentsline {section}{\numberline {A}LBP approach}{4}

@@ -4,6 +4,9 @@
 \usepackage{comment}
 \usepackage[margin = 1in, includefoot]{geometry}
 
+%Biblography Preamble
+\usepackage[numbers,sort&compress]{natbib}
+
 %\usepackage[hidelinks]{ hyperef } %this will help in hiding the links as if it is not done then links will appear in funky colors which won't look nice.
 
 %Graphics ensemble
@@ -23,6 +26,8 @@
 
 %Header and Footer stuff over
 
+
+
 \begin{document}
 
 %commenting using package
@@ -32,7 +37,7 @@ this is used to comment out lines.
 \author{Innovative Coder}
 \date{August 27, 2017}
 \maketitle
-above written code will print the report in very lame format 
+above written code will print t he report in very lame format 
 the code written below is improved.
 \end{comment}
 %commenting over
@@ -97,7 +102,7 @@ The code is well explained.
 
 \newpage %new page is selected and matter is written to the new page
 \section{LBP : Local Binary Pattern}
-LBP is an intelligent way of checking the illumination. 
+LBP is an intelligent way of checking the illumination. \cite{ref:Spoof_two,ref:three,ref:Spoof}
 
 The introduction of this algorithm is found on page \pageref{sec:intro}
 
@@ -130,8 +135,17 @@ The pattern is described by an illumination matrix which is  taken as relative t
 %	\end{tabular}
 %\end{table}
 	
-	
+%Table \ref{tab:LBPworking} best approach for liveness detection.
 
-\subsubsection{It contains the image of the working of LBPs}
+\subsubsection{It contains the image of the working of LBPs}\cite{ref:Spoof_two}
+
+\cleardoublepage
+\bibliographystyle{IEEEtran} %biblography built using Bibdesk came along with the LaTeX package
+\bibliography{/Users/DBRSJ/Desktop/LaTeX/LaTeX_tutorial/References/Spoof_ref.bib}
+\addcontentsline{toc}{section}{\numberline{}References}
+
+
+
+
 
 \end{document}

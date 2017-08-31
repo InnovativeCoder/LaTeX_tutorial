@@ -9,9 +9,14 @@
 
 %\usepackage[hidelinks]{ hyperef } %this will help in hiding the links as if it is not done then links will appear in funky colors which won't look nice.
 
-%Graphics ensemble
+%Graphics Preamble
 %\usepackage(graphicx) %Allows you to import images
 %\usepackage(float) %Allows for control of float positions
+
+%Bullet Preamble
+\renewcommand{\labelitemi}{$\bullet$}
+\renewcommand{\labelitemii}{$\diamond$}
+\renewcommand{\labelitemiii}{$\circ$}
 
 
 
@@ -137,7 +142,30 @@ The pattern is described by an illumination matrix which is  taken as relative t
 	
 %Table \ref{tab:LBPworking} best approach for liveness detection.
 
-\subsubsection{It contains the image of the working of LBPs}\cite{ref:Spoof_two}
+\subsubsection{Subsubsection}\cite{ref:Spoof_two}
+This is a sub subsection.
+
+This sub subsection will be used for containing a list!
+
+\begin{itemize}
+	\item This is our first line
+	\item This is second line and I am making it longer so that you can see how text wraps automatically in LaTeX.
+	\begin{itemize}
+		\item A bullet within a bullet.
+			\begin{itemize}
+				\item Must go deeper
+			\end{itemize}
+		\item[Title] A second one too. %the thing in [ ] will replace the bullet
+ 	\end{itemize}
+	\item Good things comes in three.
+	\item [Title] alpha beta gamma!!
+	\item[This is a longer title] Beta gamma depta theta. 
+		\begin{enumerate} % for a numbered list
+			\item Some people
+			\item Like lists with numbers instead.
+		\end{enumerate}
+\end{itemize}
+
 
 \cleardoublepage
 \bibliographystyle{IEEEtran} %biblography built using Bibdesk came along with the LaTeX package

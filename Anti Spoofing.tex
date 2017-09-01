@@ -7,6 +7,10 @@
 %Biblography Preamble
 \usepackage[numbers,sort&compress]{natbib}
 
+%Maths Preamble
+\usepackage{mhchem} %Allows us to write Chemistry equations
+\usepackage{xfrac} %Allows for slanted fractions
+
 %\usepackage[hidelinks]{ hyperef } %this will help in hiding the links as if it is not done then links will appear in funky colors which won't look nice.
 
 %Graphics Preamble
@@ -177,6 +181,47 @@ This sub subsection will be used for containing a list!
 \appendix
 \section{LBP approach}
 This is the appendix.
+
+I can write math in line with text $E = mc^2$ is wanted to.
+
+I can write math in next line with center alignment also  $$E = mc^2$$ 
+
+If I wanted to have maths $$PV = nRT$$ not in a sentence I could do that.
+
+We can use symbols in our math formulas even the greek symbols can be used.
+
+$$-\frac{\hbar^2}{2m}\frac{d^2\Psi}{dx^2} = E\Psi$$  %hbar is used for h-dirac and Psi can be used for the greek symbol.
+
+\bfseries {Chemical Equation}: 
+
+\ce{CH_{4(g)} + O_{2(g)} -> CO_{2(g)} + 2H_2O_{(l)} }  %the combustion equation
+
+
+\bfseries{Fractions} :
+
+$$d = v_it + 1/2 \cdot at^2$$ % Here the 1/2 is is written as plane text so for converting it to the fraction we use following 
+
+
+$$d = v_it + \frac{1}{2} \cdot at^2$$ 
+
+%Another type :
+$$d = v_it + \sfrac{1}{2} \cdot at^2$$ 
+
+\bfseries Brackets :
+$$(\frac{1}{2}) \cdot 2 = 1$$ %So the brackets here don't go up all the way to fraction 
+
+%How we do that is 
+$$\left(   \frac{1}{2}   \right) \cdot 2 = 1$$
+$$\left| -7 \right| = 7$$
+
+$$x^{2^3}$$
+
+$$\sqrt{4} = 2$$
+$$\sqrt{4} \neq 5 $$ %neq is for not equal
+$$\sqrt{4} < 5$$
+
+$$\pi \approx 3 $$
+$$\pi \times \sqrt{4} < 15 $$
 
 
 \end{document}
